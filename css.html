@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <!-- 外联样式CSS -->
+    <link rel="stylesheet" href="./css.css">
+    <!-- 内联样式CSS -->
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+        } */
+
+        body {
+            /* background-color: #b0c4de; */
+            background-image: url('./imgs/img.png');
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            /* background-size: cover; */
+            background: url('./imgs/img.png') center center no-repeat;
+            background-size: 100%;
+            /* background-attachment: fixed; */
+        }
+
+        #p1 {
+            color: red;
+            text-align: center;
+        }
+
+        .p1 {
+            font-size: 65px;
+            background-color: aqua;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- 行内样式 -->
+    <p id="p1" class="p1 pdd2" style="margin: 100px auto;">这是一个段落</p >
+    <!-- 优先级：行内样式>内联样式>外联样式>浏览器样式表 -->
+    <h1>这是一个h1标签</h1>
+    <div class="log">bbbbg</div>
+    <a href=" " class="baidu" target="_blank">asdasdasdasdasdasd</a >
+    <p class="zlm">asdasd dadada cccc rrrr</p >
 </body>
 </html>
